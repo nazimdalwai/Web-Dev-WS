@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table, th, tr, td{
+            border: 2px solid;
+            padding: 10px;
+            border-collapse: collapse;
+            text-align: center;
+            caption-side: bottom;
+        }
+        
+        #fast{
+            background-color: white;
+        }
+        #eat{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup span="1" style="background-color: antiquewhite;"></colgroup>
+        <colgroup span="2" style="background-color: coral; visibility: collapse;">
+        <caption>This is Carb Tables</caption>
+        <tr>
+            <th rowspan="2">State of Health</th>
+            <th colspan="2" id="fast">Fasting Value</th>
+            <th id="eat">After Eating</th>
+        </tr>
+        <tr>
+            <td>Minimum</td>
+            <td>Maximum</td>
+            <td>2 hours of after eating</td>
+        </tr>
+        <tr>
+            <td>Healthy</td>
+            <td>70</td>
+            <td>100</td>
+            <td>Less than 140</td>
+        </tr>
+
+        <tr>
+            <td>Diabetes</td>
+            <td>101</td>
+            <td>126</td>
+            <td>Less than 240</td>
+        </tr>
+
+        <tr>
+            <td>Pre-Diabetes</td>
+            <td>More than 126</td>
+            <td>NA</td>
+            <td>Less than 180</td>
+        </tr>
+
+    </table>
+</body>
+</html>
